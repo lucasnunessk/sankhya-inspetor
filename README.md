@@ -1,5 +1,4 @@
-[![release](https://img.shields.io/github/v/release/lucasnunessk/sankhya-inspetor?label=release&color=blue)](https://github.com/lucasnunessk/sankhya-inspetor/releases/
-latest)
+[![release](https://img.shields.io/github/v/release/lucasnunessk/sankhya-inspetor?label=release&color=blue)]
 
 # Inspetor Sankhya
 
