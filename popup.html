@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Inspetor Sankhya</title>
+<style>
+  :root { --verde: #2e7d32; --txt: #1f2933; --sub: #57606a; --linha: #eaeef2; }
+  * { box-sizing: border-box; }
+  body { margin: 0; width: 300px; font: 13px/1.4 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--txt); background: #fff; }
+  header { background: var(--verde); color: #fff; padding: 10px 14px; font-weight: 600; font-size: 14px; }
+  .item { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 11px 14px; border-bottom: 1px solid var(--linha); }
+  .item.sub { padding-left: 28px; }
+  .item.desab { opacity: .45; }
+  .nome { font-weight: 600; }
+  .det { color: var(--sub); font-size: 12px; }
+  .sw { position: relative; width: 38px; height: 22px; flex: none; }
+  .sw input { opacity: 0; width: 0; height: 0; position: absolute; }
+  .sw span { position: absolute; inset: 0; background: #c9d1d9; border-radius: 22px; cursor: pointer; transition: background .15s; }
+  .sw span::before { content: ""; position: absolute; width: 16px; height: 16px; left: 3px; top: 3px; background: #fff; border-radius: 50%; transition: transform .15s; }
+  .sw input:checked + span { background: var(--verde); }
+  .sw input:checked + span::before { transform: translateX(16px); }
+  .sw input:focus-visible + span { outline: 2px solid #0969da; outline-offset: 2px; }
+  footer { padding: 8px 14px; color: var(--sub); font-size: 11px; }
+</style>
+</head>
+<body>
+  <header>Inspetor Sankhya</header>
+
+  <label class="item">
+    <div><div class="nome">Inspetor</div><div class="det">Clique direito: tabela, campo e opções</div></div>
+    <span class="sw"><input type="checkbox" id="ativo"><span></span></span>
+  </label>
+
+  <label class="item sub" id="linhaObjetos">
+    <div><div class="nome">Objetos do banco</div><div class="det">Triggers e dependentes da tabela no painel</div></div>
+    <span class="sw"><input type="checkbox" id="objetos"><span></span></span>
+  </label>
+
+  <label class="item">
+    <div><div class="nome">Raio-x</div><div class="det">Nome físico sobre cada campo e coluna</div></div>
+    <span class="sw"><input type="checkbox" id="raiox"><span></span></span>
+  </label>
+
+  <footer id="versao"></footer>
+  <script src="popup.js"></script>
+</body>
+</html>
