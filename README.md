@@ -4,7 +4,7 @@ Extensão para Chrome (também funciona no Edge e no Brave) que mostra **de qual
 
 Feita para quem desenvolve, dá suporte ou faz consultoria no Sankhya e passa o dia perguntando "esse campo fica em qual tabela?".
 
-![Clique direito num campo mostrando TABELA.COLUNA](docs/painel-campo.png)
+<img width="443" height="415" alt="image" src="https://github.com/user-attachments/assets/de724738-a929-4fd1-a0f0-4a684032b532" />
 
 ## O que ela faz
 
@@ -27,23 +27,20 @@ CASE TGFPAR.TIPPESSOA
 END
 ```
 
-![Painel com a lista de opções do campo](docs/painel-opcoes.png)
-
 ### Raio-x (opcional)
 Coloca uma etiqueta com o nome físico sobre **cada campo e cada coluna** da tela aberta. Verde = campo da tabela, azul = campo de ligação, cinza = calculado. Passar o mouse mostra `TABELA.COLUNA` e a descrição; clicar na etiqueta copia.
 
-![Raio-x num formulário](docs/raiox-formulario.png)
+<img width="361" height="535" alt="image" src="https://github.com/user-attachments/assets/e2dca747-83ec-4369-a487-75ff6b1a9a10" />
 
 ### Objetos do banco (opcional)
 Acrescenta ao painel as **triggers** da tabela (evento, momento, desativada ou inválida) e os **objetos que dependem dela** (views, procedures, functions, packages e triggers de outras tabelas), com os inválidos marcados. Detecta sozinho se o banco é Oracle ou SQL Server.
 
-![Objetos do banco no painel](docs/objetos-banco.png)
+<img width="435" height="239" alt="image" src="https://github.com/user-attachments/assets/abb5eb7a-e354-47b6-8dac-4d9b29af952f" />
 
 ## Onde funciona
 
 - Telas HTML5 nativas do Sankhya OM (formulário, grade e abas de detalhe)
 - Telas de **addon** (que rodam fora de `/mge`, como `/<addon>/Tela.xhtml5`)
-- Sankhya na nuvem (`*.sankhyacloud.com.br`) e servidor próprio do cliente
 
 Não funciona em telas Flex/SWF nem em applets.
 
@@ -58,7 +55,7 @@ Não funciona em telas Flex/SWF nem em applets.
 
 Clique no ícone para ligar e desligar o Inspetor, o Raio-x e os Objetos do banco.
 
-![Painel do ícone com as chaves](docs/popup.png)
+<img width="304" height="232" alt="image" src="https://github.com/user-attachments/assets/96cc704a-ecb9-447e-b498-f210760df1db" />
 
 ### Atualizar
 Copie os arquivos da versão nova **para a mesma pasta** que o navegador já carrega, clique em recarregar no card da extensão em `chrome://extensions` e dê F5 no Sankhya. Usar a mesma pasta mantém as suas configurações.
@@ -90,5 +87,3 @@ Abra uma **[issue](../../issues)** informando: versão do Sankhya, tela (nome e 
 - **1.0.0**: versão inicial (clique direito com tabela, coluna e instância).
 
 ---
-
-Projeto independente, sem vínculo com a Sankhya Gestão de Negócios. "Sankhya" é marca de seus respectivos donos.
