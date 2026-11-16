@@ -1,3 +1,6 @@
+[![release](https://img.shields.io/github/v/release/lucasnunessk/sankhya-inspetor?label=release&color=blue)](https://github.com/lucasnunessk/sankhya-inspetor/releases/
+latest)
+
 # Inspetor Sankhya
 
 Extensão para Chrome (também funciona no Edge e no Brave) que mostra **de qual tabela e coluna é cada campo** das telas do Sankhya OM. É só clicar com o botão direito.
